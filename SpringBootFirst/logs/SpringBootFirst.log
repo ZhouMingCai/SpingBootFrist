@@ -1,0 +1,94 @@
+0    INFO  [2018-01-15 20:07:36]  Starting SpringBootFirstApplication on DLCUY40JX82WHQR with PID 17784 (E:\SpringBootWorkSpase\SpingBootFrist\SpringBootFirst\target\classes started by Administrator in E:\SpringBootWorkSpase\SpingBootFrist\SpringBootFirst)
+1    INFO  [2018-01-15 20:07:36]  The following profiles are active: prod
+731  INFO  [2018-01-15 20:07:37]  Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6563cd7e: startup date [Mon Jan 15 20:07:37 CST 2018]; root of context hierarchy
+977  INFO  [2018-01-15 20:07:37]  HV000001: Hibernate Validator 5.3.6.Final
+2877 WARN  [2018-01-15 20:07:39]  No MyBatis mapper was found in '[com.zmc]' package. Please check your configuration.
+3104 INFO  [2018-01-15 20:07:39]  Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+3160 INFO  [2018-01-15 20:07:39]  Multiple Spring Data modules found, entering strict repository configuration mode!
+4053 INFO  [2018-01-15 20:07:40]  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e52dbbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5065 INFO  [2018-01-15 20:07:41]  Tomcat initialized with port(s): 8081 (https)
+5437 INFO  [2018-01-15 20:07:42]  Root WebApplicationContext: initialization completed in 4808 ms
+6033 INFO  [2018-01-15 20:07:42]  Mapping servlet: 'dispatcherServlet' to [/]
+6055 INFO  [2018-01-15 20:07:42]  Mapping filter: 'metricsFilter' to: [/*]
+6056 INFO  [2018-01-15 20:07:42]  Mapping filter: 'characterEncodingFilter' to: [/*]
+6056 INFO  [2018-01-15 20:07:42]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+6056 INFO  [2018-01-15 20:07:42]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+6056 INFO  [2018-01-15 20:07:42]  Mapping filter: 'requestContextFilter' to: [/*]
+6056 INFO  [2018-01-15 20:07:42]  Mapping filter: 'webRequestLoggingFilter' to: [/*]
+6057 INFO  [2018-01-15 20:07:42]  Mapping filter: 'applicationContextIdFilter' to: [/*]
+7113 INFO  [2018-01-15 20:07:43]  Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6563cd7e: startup date [Mon Jan 15 20:07:37 CST 2018]; root of context hierarchy
+7131 INFO  [2018-01-15 20:07:43]  Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+7319 INFO  [2018-01-15 20:07:43]  Mapped "{[/index]}" onto public java.lang.String com.zmc.web.controller.IndexController.index()
+7320 INFO  [2018-01-15 20:07:43]  Mapped "{[/book]}" onto public java.lang.String com.zmc.web.controller.IndexController.book()
+7328 INFO  [2018-01-15 20:07:43]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+7328 INFO  [2018-01-15 20:07:43]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+7386 INFO  [2018-01-15 20:07:43]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7387 INFO  [2018-01-15 20:07:43]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7418 INFO  [2018-01-15 20:07:44]  Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+7468 INFO  [2018-01-15 20:07:44]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7558 WARN  [2018-01-15 20:07:44]  Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+8284 WARN  [2018-01-15 20:07:44]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
+8354 INFO  [2018-01-15 20:07:44]  
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+8363 ERROR [2018-01-15 20:07:44]  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
+
+1    INFO  [2018-01-15 20:08:42]  Starting SpringBootFirstApplication on DLCUY40JX82WHQR with PID 17364 (E:\SpringBootWorkSpase\SpingBootFrist\SpringBootFirst\target\classes started by Administrator in E:\SpringBootWorkSpase\SpingBootFrist\SpringBootFirst)
+1    INFO  [2018-01-15 20:08:42]  The following profiles are active: prod
+737  INFO  [2018-01-15 20:08:42]  Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@678671c4: startup date [Mon Jan 15 20:08:42 CST 2018]; root of context hierarchy
+889  INFO  [2018-01-15 20:08:43]  HV000001: Hibernate Validator 5.3.6.Final
+2755 WARN  [2018-01-15 20:08:44]  No MyBatis mapper was found in '[com.zmc]' package. Please check your configuration.
+3063 INFO  [2018-01-15 20:08:45]  Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+3135 INFO  [2018-01-15 20:08:45]  Multiple Spring Data modules found, entering strict repository configuration mode!
+4035 INFO  [2018-01-15 20:08:46]  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7efc5f4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5041 INFO  [2018-01-15 20:08:47]  Tomcat initialized with port(s): 8081 (https)
+5404 INFO  [2018-01-15 20:08:47]  Root WebApplicationContext: initialization completed in 4671 ms
+5994 INFO  [2018-01-15 20:08:48]  Mapping servlet: 'dispatcherServlet' to [/]
+6003 INFO  [2018-01-15 20:08:48]  Mapping filter: 'metricsFilter' to: [/*]
+6003 INFO  [2018-01-15 20:08:48]  Mapping filter: 'characterEncodingFilter' to: [/*]
+6004 INFO  [2018-01-15 20:08:48]  Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+6004 INFO  [2018-01-15 20:08:48]  Mapping filter: 'httpPutFormContentFilter' to: [/*]
+6004 INFO  [2018-01-15 20:08:48]  Mapping filter: 'requestContextFilter' to: [/*]
+6004 INFO  [2018-01-15 20:08:48]  Mapping filter: 'webRequestLoggingFilter' to: [/*]
+6004 INFO  [2018-01-15 20:08:48]  Mapping filter: 'applicationContextIdFilter' to: [/*]
+7098 INFO  [2018-01-15 20:08:49]  Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@678671c4: startup date [Mon Jan 15 20:08:42 CST 2018]; root of context hierarchy
+7124 INFO  [2018-01-15 20:08:49]  Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+7442 INFO  [2018-01-15 20:08:49]  Mapped "{[/index]}" onto public java.lang.String com.zmc.web.controller.IndexController.index()
+7443 INFO  [2018-01-15 20:08:49]  Mapped "{[/book]}" onto public java.lang.String com.zmc.web.controller.IndexController.book()
+7446 INFO  [2018-01-15 20:08:49]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+7447 INFO  [2018-01-15 20:08:49]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+7515 INFO  [2018-01-15 20:08:49]  Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7515 INFO  [2018-01-15 20:08:49]  Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7551 INFO  [2018-01-15 20:08:49]  Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+7607 INFO  [2018-01-15 20:08:49]  Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+7687 WARN  [2018-01-15 20:08:49]  Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+8420 WARN  [2018-01-15 20:08:50]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
+8478 INFO  [2018-01-15 20:08:50]  
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+8485 ERROR [2018-01-15 20:08:50]  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "prod" are currently active).
+
